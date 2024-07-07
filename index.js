@@ -1,7 +1,11 @@
 import { app } from "./app.js";
 import { dbConnection } from "./config/database.js";
+import dotenv from "dotenv";
 
 
+dotenv.config({
+    path: './.env'
+})
 
 
 

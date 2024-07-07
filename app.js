@@ -12,8 +12,9 @@ app.use(cookieParser());
 
 
 import auth from './routes/auth.routes.js'
+import notification from './routes/notification.route.js'
 
-
-app.use('/api/v1/auth', auth);
+app.use('/api', auth);
+app.use('/api',notification);
 
 export{app};
